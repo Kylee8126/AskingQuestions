@@ -2,6 +2,8 @@ package questions.controller;
 
 import java.util.Scanner;
 
+import javax.swing.JOptionPane;
+
 public class Questions
 {
 	private Scanner questionScanner;
@@ -15,10 +17,17 @@ public class Questions
 	
 	public void start()
 	{
-		askQuestions();
-		askMoreQuestions();
+		//askQuestions();
+		//askMoreQuestions();
+		askQuestionsGUI();
 	}
 
+	private void askQuestionsGUI()
+	{
+		JOptionPane.showMessageDialog(null, "Hi what's your name? ");
+		String answerGUI = JOptionPane.showInputDialog("Hi what's your name?");
+		answerGUI = JOptionPane.showInputDialog("" + answerGUI + " that's a nice name!");
+	}
 	private void askQuestions()
 	{
 		System.out.println("What is your name?");
@@ -58,4 +67,6 @@ public class Questions
 		Scanner s = new Scanner(input).useDelimiter ("\\s*age\\s*");
 		System.out.println(s.nextInt());
 	}
+	
+	
 }
