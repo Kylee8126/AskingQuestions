@@ -26,7 +26,12 @@ public class Questions
 	{
 		JOptionPane.showMessageDialog(null, "Hi what's your name? ");
 		String answerGUI = JOptionPane.showInputDialog("Hi what's your name?");
-		answerGUI = JOptionPane.showInputDialog("" + answerGUI + " that's a nice name!");
+		answerGUI = JOptionPane.showInputDialog("" + answerGUI + " that's a nice name! How are you today?");
+		answerGUI = JOptionPane.showInputDialog("ah me too im feeling pretty " + answerGUI + " myself. Did you know the new tailer for the new Hunger Games came out yesterday?");
+		answerGUI = JOptionPane.showInputDialog(""+ answerGUI + "dude really? what's your problem bruh?");
+		answerGUI = JOptionPane.showInputDialog("Well I suppose that makes us friends!" );
+		
+		
 	}
 	private void askQuestions()
 	{
